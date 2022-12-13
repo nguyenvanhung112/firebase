@@ -1,0 +1,10 @@
+<div>Thêm sản phẩm</div>
+<div>
+<form [formGroup]="formProduct" (ngSubmit)="addProduct()" >
+  <label class="form-label fw-bold fst-italic">Tên</label>
+  <input formControlName="name" type="text" class="form-control">
+  <label class="form-label fw-bold fst-italic">Ảnh</label>
+  <input type="file" class="form-control" (change)="saveImg($event)">
+  <input type="submit">
+</form>
+</div>

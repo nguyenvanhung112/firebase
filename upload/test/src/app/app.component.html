@@ -1,0 +1,15 @@
+<app-create></app-create>
+
+<table class="table-primary" style="text-align: center;width: 100%" border="1">
+  <tr>
+    <th>Id</th>
+    <th>Tên</th>
+    <th>Ảnh</th>
+  </tr>
+  <tr *ngFor="let product of productList">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td><img style="width: 200px; height: 200px" src="{{product.img}}"></td>
+
+  </tr>
+</table>
